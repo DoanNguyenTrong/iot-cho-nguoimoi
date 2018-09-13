@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="vi" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="vi" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Node MCU trong mạng cục bộ &mdash; Tài liệu IOT cho nguoi moi 0.0.1</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Tìm Kiếm" href="search.html" />
+    <link rel="next" title="Node MCU trong mạng Internet" href="node_mcu_with_internet.html" />
+    <link rel="prev" title="Node MCU và ngoại vi, ESP8266 trong mạng cục bộ,Giao tiếp điều khiển qua Nod eMCU" href="external_devices.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> IOT cho nguoi moi
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Giới thiệu về khóa học</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IOT_overview_and_esp8266.html">Tổng quan về IOTs và ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C_Cpp_Github.html">Nhắc lại kiến thức về lập trình C/C++. Giới thiệu công cụ quản lý  Source code Github.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="esp8266_node_mcu.html">Giới thiệu về ESP8266 và board Node MCU.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_devices.html">Node MCU và ngoại vi, ESP8266 trong mạng cục bộ,Giao tiếp điều khiển qua Nod eMCU</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Node MCU trong mạng cục bộ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="node_mcu_with_internet.html">Node MCU trong mạng Internet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multidevices_firmware_update.html">Kết nối nhiều thiết bị. Cập nhật firmware từ xa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Cơ sở dữ liệu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simple_application.html">Xây dựng một App điện thoại đơn giản để kết nối với ESP8266</a></li>
+<li class="toctree-l1"><a class="reference internal" href="professional_iot.html">Thu hoạch sản phẩm. Từ cơ bản đến IOT chuyên nghiệp như thế nào?</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">IOT cho nguoi moi</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Node MCU trong mạng cục bộ</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/node_mcu_in_local_network.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="node-mcu-trong-mang-cuc-bo">
+<h1>Node MCU trong mạng cục bộ<a class="headerlink" href="#node-mcu-trong-mang-cuc-bo" title="Permalink to this headline">¶</a></h1>
+<p>5.1. Kết  nối Node MCU với WIFI</p>
+<p>5.2. Webserver là gì?</p>
+<p>5.3. Tạo Webserver trên Node MCU</p>
+<p>5.4. Sử dụng Webserver để thu thập dữ liệu của cảm biến nhiệt độ, điều khiển Relay</p>
+<p>Bài tập về nhà</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="node_mcu_with_internet.html" class="btn btn-neutral float-right" title="Node MCU trong mạng Internet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="external_devices.html" class="btn btn-neutral" title="Node MCU và ngoại vi, ESP8266 trong mạng cục bộ,Giao tiếp điều khiển qua Nod eMCU" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Doan Nguyen, Hoi Nguyen, Duc Thanh.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            LANGUAGE:'vi',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
