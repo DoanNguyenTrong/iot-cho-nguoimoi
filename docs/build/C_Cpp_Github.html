@@ -82,7 +82,15 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Giới thiệu về khóa học</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IOT_overview_and_esp8266.html">Tổng quan về IOTs và ESP8266</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Nhắc lại kiến thức về lập trình C/C++. Giới thiệu công cụ quản lý  Source code Github.</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Nhắc lại kiến thức về lập trình C/C++. Giới thiệu công cụ quản lý  Source code Github.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hoc-lap-trinh-nhu-the-nao">1. Học lập trình như thế nào?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cau-truc-chuong-trinh-c-c">2. Cấu trúc chương trình C/C++</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bien">3. Biến</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chuong-trinh-con">4. Chương trình con</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cac-cau-lenh-co-ban">5. Các câu lệnh cơ bản</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vi-du">6. Ví dụ</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="esp8266_node_mcu.html">Giới thiệu về ESP8266 và board Node MCU.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="external_devices.html">Node MCU và ngoại vi, ESP8266 trong mạng cục bộ,Giao tiếp điều khiển qua Nod eMCU</a></li>
 <li class="toctree-l1"><a class="reference internal" href="node_mcu_in_local_network.html">Node MCU trong mạng cục bộ</a></li>
@@ -157,6 +165,114 @@
             
   <div class="section" id="nhac-lai-kien-thuc-ve-lap-trinh-c-c-gioi-thieu-cong-cu-quan-ly-source-code-github">
 <h1>Nhắc lại kiến thức về lập trình C/C++. Giới thiệu công cụ quản lý  Source code Github.<a class="headerlink" href="#nhac-lai-kien-thuc-ve-lap-trinh-c-c-gioi-thieu-cong-cu-quan-ly-source-code-github" title="Permalink to this headline">¶</a></h1>
+<p>C/C++ cho các bạn mới bắt đầu
+Bạn hãy đọc thật kỹ những thứ tôi viết ở dưới đây nó sẽ là cẩm nang để bạn
+làm chủ ngôn ngữ lập trình một cách nhanh nhất.</p>
+<div class="section" id="hoc-lap-trinh-nhu-the-nao">
+<h2>1. Học lập trình như thế nào?<a class="headerlink" href="#hoc-lap-trinh-nhu-the-nao" title="Permalink to this headline">¶</a></h2>
+<p>Bạn nghĩ học lập trình có khó không? Mỗi một ngôn ngữ lập trình đều có một cái khó
+và cái dễ riêng. Các bạn nên nắm chắc một ngôn ngữ trước khi chuyển qua một ngôn
+ngữ lập trình mới. Lời khuyên của tôi là nên bắt đầu từ C/C++.
+Nào bắt tay vào công việc thôi.Hãy làm đúng các bước mà tôi hướng dẫn, nếu bạn đã là
+một coder chuyên nghiệp thì hãy bỏ qua bài viết này của tôi. Nếu bạn chưa biết hoặc
+biết đôi chút về lập trình, tôi khuyên bạn nên làm theo những gì tôi viết sau đây.</p>
+<blockquote>
+<div><p><strong>Bước 1:</strong> Đọc hiểu, note lại những gì chưa biết trong code mẫu.</p>
+<p><strong>Bước 2:</strong> Chạy thử để thấy được thành quả.</p>
+<p><strong>Bước 3:</strong> Tìm hiểu những gì chưa biết, nhớ những câu lệnh, cú pháp của ngôn ngữ.</p>
+<p><strong>Bước 4:</strong> Nhớ trình tự thực hiện theo ý nghĩa của từng dòng lệnh.</p>
+<p><strong>Bước 5:</strong> Gõ lại toàn bộ chương trình theo các dòng Bước 4 đã viết (Chú ý không xem lại code). Chạy lại để đạt được kết quả giống như code mẫu.</p>
+<p><strong>Bước 6:</strong> Xem lại toàn bộ code, hiểu những thứ mỡi mình chưa biết sau mỗi code mẫu để áp dụng cho những chương trình sau.</p>
+</div></blockquote>
+<p>Nào chúng ta cùng bắt đầu thôi.</p>
+</div>
+<div class="section" id="cau-truc-chuong-trinh-c-c">
+<h2>2. Cấu trúc chương trình C/C++<a class="headerlink" href="#cau-truc-chuong-trinh-c-c" title="Permalink to this headline">¶</a></h2>
+<p>Trước tiên bạn cần cài phần mềm <a class="reference external" href="https://drive.google.com/file/d/0BxQ8G3yNuNNaVHYtU1JGZXJlMXc/view?usp=sharing">DevC++</a> để có thể chạy được các code mẫu mà tôi viết
+dưới đây. Bạn có thể tải tại <a class="reference external" href="https://drive.google.com/file/d/0BxQ8G3yNuNNaVHYtU1JGZXJlMXc/view?usp=sharing">đây</a></p>
+<p>Tải file template tại đây:</p>
+<p><a class="reference download internal" href="_downloads/template.cpp" download=""><code class="xref download docutils literal notranslate"><span class="pre">download</span> <span class="pre">template.cpp</span></code></a></p>
+<div class="highlight-C++ notranslate"><div class="highlight"><pre><span></span><span class="cm">/*****************************************</span>
+<span class="cm"> ******* TEMPLATE CHƯƠNG TRÌNH C++ *******</span>
+<span class="cm"> * Hoi Nguyen</span>
+<span class="cm"> * nguyenvanhoi.sme@gmail.com</span>
+<span class="cm"> * ***************************************/</span>
+
+<span class="c1">//======= Khai báo các thư viện sử dụng trong chương trình ===========</span>
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;math.h&gt;</span><span class="cp"></span>
+<span class="c1">// Định nghĩa các hằng số, cấu trúc</span>
+
+<span class="c1">//Khai báo các biến toàn cục</span>
+
+<span class="c1">//======= Các hàm, chương trình con ==================================</span>
+<span class="kt">int</span> <span class="nf">ham1</span><span class="p">(</span><span class="kt">int</span> <span class="n">bien1</span><span class="p">,</span> <span class="kt">float</span> <span class="n">bien2</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">//Khai báo các biến địa phương</span>
+    <span class="k">return</span> <span class="n">bien1</span><span class="o">+</span><span class="n">bien2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">//======= Chương trình chính ==========================================</span>
+<span class="kt">void</span>  <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">//Khai báo các biến địa phương</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="bien">
+<h2>3. Biến<a class="headerlink" href="#bien" title="Permalink to this headline">¶</a></h2>
+<p>Các kiểu dữ liệu cơ bản cần nhớ:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="28%" />
+<col width="42%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Dữ liệu</th>
+<th class="head">Từ khóa</th>
+<th class="head">Kích thước (byte)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Kí tự</td>
+<td>char</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>Số nguyên</td>
+<td>int</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>Số thực</td>
+<td>float</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>Số thực</td>
+<td>double</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>Chú ý:
+a. Kiểu dữ liệu Char</p>
+<p>b. Kiểu dữ liệu số nguyên
+Với số nguyên ta có hai kiểu dữ liệu có dấu và không dấu.
+Dải giá trị của số nguyên phụ thuộc vào kích thước của kiểu dữ liệu.
+Công thức tính dải giá trị (ví dụ đối với kiểu int)</p>
+<blockquote>
+<div>Giá trị nhỏ nhất: <span class="math notranslate nohighlight">\(Min_\text{value} =- (2^4) = 65536\)</span>
+Giá trị lớn nhất: <span class="math notranslate nohighlight">\(Max_\text{value} = 2^4 - 1\)</span></div></blockquote>
+</div>
+<div class="section" id="chuong-trinh-con">
+<h2>4. Chương trình con<a class="headerlink" href="#chuong-trinh-con" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="cac-cau-lenh-co-ban">
+<h2>5. Các câu lệnh cơ bản<a class="headerlink" href="#cac-cau-lenh-co-ban" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="vi-du">
+<h2>6. Ví dụ<a class="headerlink" href="#vi-du" title="Permalink to this headline">¶</a></h2>
 <p>2.1. Nhắc lại các kiến thức về:</p>
 <ul class="simple">
 <li>Kiểu dữ liệu</li>
@@ -173,6 +289,7 @@
 <li>Quản lý source code bằng Github</li>
 <li>Làm việc nhóm với Github</li>
 </ul>
+</div>
 </div>
 
 
