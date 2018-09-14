@@ -44,6 +44,15 @@ Tải file template tại đây:
 .. literalinclude:: doc/template.cpp
   :language: C++
 
+Một chương trình C++ bao gồm có ba phần chính:
+
+- **Phần 1**: Dùng để khai báo các thư viện sử dụng trong chương trình
+
+- **Phần 2**: Dùng để định nghĩa các hàm, chương trình con
+
+- **Phần 3**: Dùng để viết chương trình chính (main)
+
+:red:`interpreted text`
 
 -----------------------------------------------------------
 
